@@ -1,94 +1,141 @@
-# Lenskart Movie App – Flutter Assignment
+Lenskart Movie App – Flutter Assignment
+Description
 
-## Description
-This is a Flutter-based movie browsing application built as part of the
-Lenskart internship assignment. The app uses **TMDB (The Movie Database) API**
-to fetch and display popular movies and allows users to search, view details,
-and manage favourites and a watchlist.
+This project is a Flutter-based mobile application developed as part of the
+Lenskart internship coding assignment. The application uses TMDB (The Movie
+Database) API to fetch and display popular movies and allows users to search,
+view movie details, and manage favourites and a watchlist.
 
-The focus of this project is on clean UI, proper app flow, and handling
-different UI states such as loading, empty, and error scenarios.
+The focus of this project is on clean UI, readable code, and handling common UI
+states such as loading, empty, and error conditions.
 
----
+Features
 
-## Features
-- Splash Screen
-- Bottom Navigation with:
-  - Movies
-  - Favourites
-  - Watchlist
-- Movie listing using TMDB API
-- Search movies by title
-- Movie detail screen with:
-  - Banner image
-  - Title
-  - Overview
-  - Release date
-  - Genres
-  - User rating
-- Add movies to Favourites and Watchlist
-- Visual feedback for liked/watchlisted movies
-- In-app notification on **Play Now**
-- Loading, Empty, and Error state handling
-- Clean Material UI with card-based layout
+Splash Screen
 
----
+Bottom Navigation with Movies, Favourites, and Watchlist
 
-## Tech Stack
-- **Flutter (Dart)**
-- **TMDB API**
-- HTTP package for API calls
+Fetch popular movies using TMDB API
 
----
+Search movies by title
 
-## App Flow
-Splash Screen → Home Page  
-Home Page contains Bottom Navigation:
-- Movies (Landing Screen)
-- Favourites
-- Watchlist
+Movie details screen with banner, description, genres, rating, and release date
 
-Clicking a movie opens the Movie Detail screen.
+Add movies to Favourites and Watchlist
 
-Steps to Run the Application
+Visual feedback for favourite and watchlist actions
+
+In-app notification on Play Now
+
+Clean Material UI with card-based layout
+
+Responsive layout for common screen sizes
+
+App Flow
+
+Splash Screen → Home Page
+
+Home Page contains:
+
+Movies (Landing Screen)
+
+Favourites
+
+Watchlist
+
+Selecting a movie opens the Movie Detail screen.
+
+Tech Stack
+
+Flutter (Dart)
+
+TMDB API
+
+HTTP package
+
+Setup Instructions
+
 Install Flutter
-Ensure Flutter SDK is installed on your system.
-Follow the official guide: https://docs.flutter.dev/get-started/install
+Ensure Flutter SDK is installed on your system by following the official guide:
+https://docs.flutter.dev/get-started/install
 
-Clone the Repository
+Clone the repository
 git clone <repository-url>
 
-
-Navigate to the Project Directory
+Navigate to the project directory
 cd movie_dle
 
-
-Install Dependencies
+Install dependencies
 flutter pub get
 
-
-Add TMDB API Key
-Open lib/main.dart and replace:
+Add TMDB API key
+Open the file lib/main.dart and replace the following line:
 const String apiKey = "YOUR_TMDB_API_KEY";
 with your actual TMDB API key.
 
-Run the Application
+Run the application
 flutter run
 
+Select a device when prompted (Chrome, Windows, or Android device).
 
-Select a Device
-When prompted, choose one of the available devices:
-Chrome (Web)
-Windows (Desktop)
-Android Emulator / Physical Device
+Steps to Run the Assignment Locally
 
-Notes
-No authentication is required.
-The app supports loading, empty, and error UI states.
+Clone the GitHub repository.
+
+Install dependencies using flutter pub get.
+
+Add a valid TMDB API key in lib/main.dart.
+
+Run the app using flutter run.
+
+Select the desired device to launch the application.
+
+UI State Handling
+
+Loading State: A progress indicator is shown while movies are being fetched.
+
+Empty State: A message is displayed when no movies are available or no search results are found.
+
+Error State: An error message is displayed if the API request fails.
+
+Assumptions & Design Decisions
+
+Authentication was not required, so no login functionality is implemented.
+
 Each app session is treated as a unique user.
 
-## Setup Instructions
+Favourites and Watchlist are stored in memory.
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
+Genre names are mapped locally from TMDB genre IDs to avoid additional API calls.
+
+The focus was on correctness, clarity, and timely completion.
+
+Dependencies
+
+flutter
+
+http
+
+All dependencies are listed in the pubspec.yaml file.
+
+Code Quality
+
+Clean and readable folder structure
+
+Clear widget separation
+
+Meaningful variable and method names
+
+Comments added to explain key logic
+
+Author
+
+Joann Joseph
+MS Ramaiah Institute of Technology
+
+(Project repository hosted on a collaborator account due to system constraints.)
+
+Notes
+
+This project is original work developed specifically for the Lenskart internship
+coding assignment and follows all provided guidelines.
