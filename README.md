@@ -1,13 +1,9 @@
 Lenskart Movie App – Flutter Assignment
 Description
 
-This project is a Flutter-based mobile application developed as part of the
-Lenskart internship coding assignment. The application uses TMDB (The Movie
-Database) API to fetch and display popular movies and allows users to search,
-view movie details, and manage favourites and a watchlist.
+This project is a Flutter-based mobile application developed as part of the Lenskart internship coding assignment. The application uses TMDB (The Movie Database) API to fetch and display popular movies and allows users to search, view movie details, and manage favourites and a watchlist.
 
-The focus of this project is on clean UI, readable code, and handling common UI
-states such as loading, empty, and error conditions.
+The focus of this project is on clean UI, readable code, and handling common UI states such as loading, empty, and error conditions.
 
 Features
 
@@ -19,7 +15,17 @@ Fetch popular movies using TMDB API
 
 Search movies by title
 
-Movie details screen with banner, description, genres, rating, and release date
+Movie details screen with:
+
+Banner image
+
+Description
+
+Genres
+
+Rating
+
+Release date
 
 Add movies to Favourites and Watchlist
 
@@ -27,15 +33,11 @@ Visual feedback for favourite and watchlist actions
 
 In-app notification on Play Now
 
-Clean Material UI with card-based layout
-
-Responsive layout for common screen sizes
-
 App Flow
 
 Splash Screen → Home Page
 
-Home Page contains:
+Home Page includes:
 
 Movies (Landing Screen)
 
@@ -55,28 +57,25 @@ HTTP package
 
 Setup Instructions
 
-Install Flutter
-Ensure Flutter SDK is installed on your system by following the official guide:
+Install Flutter by following the official guide:
 https://docs.flutter.dev/get-started/install
 
-Clone the repository
+Clone the repository:
 git clone <repository-url>
 
-Navigate to the project directory
+Navigate to the project directory:
 cd movie_dle
 
-Install dependencies
+Install dependencies:
 flutter pub get
 
-Add TMDB API key
-Open the file lib/main.dart and replace the following line:
+Add TMDB API key in lib/main.dart:
 const String apiKey = "YOUR_TMDB_API_KEY";
-with your actual TMDB API key.
 
-Run the application
+Run the application:
 flutter run
 
-Select a device when prompted (Chrome, Windows, or Android device).
+Select a device (Chrome, Windows, or Android).
 
 Steps to Run the Assignment Locally
 
@@ -92,11 +91,11 @@ Select the desired device to launch the application.
 
 UI State Handling
 
-Loading State: A progress indicator is shown while movies are being fetched.
+Loading State: Displays a progress indicator while data is fetched.
 
-Empty State: A message is displayed when no movies are available or no search results are found.
+Empty State: Displays a message when no movies or search results are available.
 
-Error State: An error message is displayed if the API request fails.
+Error State: Displays an error message if the API request fails.
 
 Assumptions & Design Decisions
 
@@ -106,9 +105,9 @@ Each app session is treated as a unique user.
 
 Favourites and Watchlist are stored in memory.
 
-Genre names are mapped locally from TMDB genre IDs to avoid additional API calls.
+Genre names are mapped locally from TMDB genre IDs to avoid extra API calls.
 
-The focus was on correctness, clarity, and timely completion.
+Focus was on clarity, correctness, and timely completion.
 
 Dependencies
 
@@ -116,26 +115,4 @@ flutter
 
 http
 
-All dependencies are listed in the pubspec.yaml file.
-
-Code Quality
-
-Clean and readable folder structure
-
-Clear widget separation
-
-Meaningful variable and method names
-
-Comments added to explain key logic
-
-Author
-
-Joann Joseph
-MS Ramaiah Institute of Technology
-
-(Project repository hosted on a collaborator account due to system constraints.)
-
-Notes
-
-This project is original work developed specifically for the Lenskart internship
-coding assignment and follows all provided guidelines.
+All dependencies are listed in pubspec.yaml.
