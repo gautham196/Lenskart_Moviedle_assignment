@@ -50,7 +50,42 @@ Home Page contains Bottom Navigation:
 
 Clicking a movie opens the Movie Detail screen.
 
----
+Steps to Run the Application
+Install Flutter
+Ensure Flutter SDK is installed on your system.
+Follow the official guide: https://docs.flutter.dev/get-started/install
+
+Clone the Repository
+git clone <repository-url>
+
+
+Navigate to the Project Directory
+cd movie_dle
+
+
+Install Dependencies
+flutter pub get
+
+
+Add TMDB API Key
+Open lib/main.dart and replace:
+const String apiKey = "YOUR_TMDB_API_KEY";
+with your actual TMDB API key.
+
+Run the Application
+flutter run
+
+
+Select a Device
+When prompted, choose one of the available devices:
+Chrome (Web)
+Windows (Desktop)
+Android Emulator / Physical Device
+
+Notes
+No authentication is required.
+The app supports loading, empty, and error UI states.
+Each app session is treated as a unique user.
 
 ## Setup Instructions
 
